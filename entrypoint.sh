@@ -46,6 +46,7 @@ cat "$monitoring_config" > monitoring-agent.config
 rm "$monitoring_config"
 
 cat "$backup_config" > backup-agent.config
+cat "$backup_config" > local.config
 rm "$backup_config"
 
 exec "$@"
